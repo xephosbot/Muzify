@@ -4,8 +4,15 @@
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
 
-        <item name="android:navigationBarColor">@android:color/transparent</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+
+        <item name="appBarLayoutStyle">@style/Widget.Muzify.AppBarLayout</item>
+        <item name="navigationRailStyle">@style/Widget.Muzify.NavigationRailView</item>
+    </style>
+
+    <style name="Theme.Muzify.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_background</item>
+        <item name="postSplashScreenTheme">@style/Theme.Muzify</item>
+        <item name="windowSplashScreenBackground">#FF000000</item>
     </style>
 </resources>

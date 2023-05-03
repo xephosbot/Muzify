@@ -4,10 +4,29 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
 
-        <item name="android:navigationBarColor">@android:color/transparent</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+
+        <item name="appBarLayoutStyle">@style/Widget.Muzify.AppBarLayout</item>
+        <item name="toolbarStyle">@style/Widget.MaterialComponents.Toolbar.Surface</item>
+        <item name="navigationRailStyle">@style/Widget.Muzify.NavigationRailView</item>
     </style>
 
-    <style name="Theme.Muzify" parent="Base.Theme.Muzify"/>
+    <style name="Theme.Muzify" parent="Base.Theme.Muzify">
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.Muzify.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_background</item>
+        <item name="postSplashScreenTheme">@style/Theme.Muzify</item>
+        <item name="windowSplashScreenBackground">#FFFFFFFF</item>
+    </style>
+
+    <style name="Widget.Muzify.AppBarLayout" parent="Widget.MaterialComponents.AppBarLayout.Surface">
+        <item name="elevation">4dp</item>
+    </style>
+
+    <style name="Widget.Muzify.NavigationRailView" parent="Widget.MaterialComponents.NavigationRailView">
+        <item name="elevation">0dp</item>
+    </style>
 </resources>

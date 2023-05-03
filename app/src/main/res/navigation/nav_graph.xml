@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/feature_main">
+
+    <fragment
+        android:id="@+id/feature_main"
+        android:name="com.xbot.muzify.ui.features.main.MainFragment"
+        android:label="main"
+        tools:layout="@layout/fragment_main" />
+    <fragment
+        android:id="@+id/feature_playlists"
+        android:name="com.xbot.muzify.ui.features.playlists.PlaylistsFragment"
+        android:label="playlists"
+        tools:layout="@layout/fragment_playlists" />
+    <fragment
+        android:id="@+id/feature_search"
+        android:name="com.xbot.muzify.ui.features.search.SearchFragment"
+        android:label="search"
+        tools:layout="@layout/fragment_search" />
+</navigation>
